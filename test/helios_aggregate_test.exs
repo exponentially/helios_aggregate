@@ -9,13 +9,8 @@ defmodule Helios.AggregateTest do
   alias Helios.Aggregate.Pipeline.Context
 
   # Events
-  defmodule CustomerCreated do
-    defstruct [:id, :first_name, :last_name]
-  end
-
-  defmodule CustomerContactCreated do
-    defstruct [:email]
-  end
+  defmodule CustomerCreated, do: defstruct [:id, :first_name, :last_name]
+  defmodule CustomerContactCreated, do: defstruct [:email]
 
   defmodule CustomerAggregate do
     use Helios.Aggregate
