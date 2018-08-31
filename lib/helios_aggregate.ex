@@ -98,6 +98,12 @@ defmodule Helios.Aggregate do
       import Helios.Aggregate.Pipeline.Context
 
       use Helios.Aggregate.Pipeline, opts
+
+      def new() do
+        struct(__MODULE__)
+      end
+
+      defoverridable [new: 0]
     end
   end
 

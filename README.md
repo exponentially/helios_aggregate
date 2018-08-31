@@ -2,14 +2,12 @@
 
 Elixir library defining Aggregate behaviour and providing extendable facility for aggregate command pipeline.
 
-*NOTE: Library is stil under developement and not production ready.*
-
 Please note this package is not full CQRS framework. We strongly disagree that CQRS can be boxed into framewrok, it is rather set of
 techniques you CAN apply to your service architecture.
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+[Available in Hex](https://hex.pm/packages/helios_aggregate), the package can be installed
 by adding `helios_aggregate` to your list of dependencies in `mix.exs`:
 
 ```elixir

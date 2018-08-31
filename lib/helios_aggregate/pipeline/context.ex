@@ -16,7 +16,7 @@ defmodule Helios.Aggregate.Pipeline.Context do
   @type events :: nil | event | [event]
   @type halted :: boolean
   @type owner :: pid
-  @type params :: map
+  @type params :: map | struct
   @type peer :: pid
   @type plug :: module | atom
   @type plugs :: [(t -> t)]
